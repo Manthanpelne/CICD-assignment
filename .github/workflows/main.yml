@@ -1,1 +1,26 @@
-#workflow
+# #workflow
+# title: Website name
+# description: A website for uplaoding content
+# age: 30
+# tags:
+#  - technology
+#  - images
+#  - creative
+# address:
+#   street: mg road
+#   city: pune
+#   state: na
+# value: ${{env.VALUE}}
+# variable: ${{github.VARIABLE_NAME}}
+
+name: github action ofr
+on:
+  push:
+      branches: [main]
+jobs:
+  build:
+     runs-on: windows
+     steps:
+          -name: Print hello world
+          -run: echo "Hello world"
+
