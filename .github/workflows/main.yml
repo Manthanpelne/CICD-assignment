@@ -1,25 +1,12 @@
-# #workflow
-# title: Website name
-# description: A website for uplaoding content
-# age: 30
-# tags:
-#  - technology
-#  - images
-#  - creative
-# address:
-#   street: mg road
-#   city: pune
-#   state: na
-# value: ${{env.VALUE}}
-# variable: ${{github.VARIABLE_NAME}}
 
-name: github action ofr
+
+name: Run ESLint
 on:
   push:
     branches: [main]
 jobs:
   build:
-     runs-on: ubuntu-latest
+     runs-on: windows-latest
      steps:
        - uses: actions/checkout@v3
        - name: Print node version
@@ -28,5 +15,7 @@ jobs:
          run: npm --version
        - name: Print pwd
          run: pwd
+       - name: Run eslint
+         run: npx eslint .
 
 
