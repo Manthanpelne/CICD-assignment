@@ -1,26 +1,15 @@
 {
-  "name": "cicd-assignment",
+  "name": "file-editor",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Manthanpelne/CICD-assignment.git"
+    "test": "jest app.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Manthanpelne/CICD-assignment/issues"
-  },
-  "homepage": "https://github.com/Manthanpelne/CICD-assignment#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "devDependencies": {
-    "eslint": "^8.34.0"
+    "jest": "^29.3.1"
   }
 }
